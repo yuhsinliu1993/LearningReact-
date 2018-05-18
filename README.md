@@ -1,4 +1,4 @@
-# Learning React 
+# Learning React
 
 ## Component
 
@@ -9,7 +9,7 @@ Components let you split the UI into independent, reusable pieces, and think abo
 
  class ContractInput extends React.Component {
 
-     # must have render() function     
+     // must have render() function     
      render() {
          return (
              ...
@@ -23,7 +23,7 @@ Components let you split the UI into independent, reusable pieces, and think abo
     * `React.Component` directly. Instead, you will typically subclass it, and define at least a render() method.
 
     ```JS  
-    # This is for ES6
+    // This is for ES6
     class Greeting extends React.Component {
       render() {
         return <h1>Hello, {this.props.name}</h1>;
@@ -50,8 +50,7 @@ These methods are called when an instance of a component is being created and in
     4. [render()](https://reactjs.org/docs/react-component.html#render)
     5. [componentDidMount()](https://reactjs.org/docs/react-component.html#componentdidmount)     
 
-
-
+### `this.props` and `this.state`
 
 在React中，有提供兩個屬性進行資料的傳遞與儲存－`this.props` 以及 `this.state`。
 這兩個屬性有不同的特性與行為，在使用上，大概可以區分為靜態資料使用`this.props`，動態資料使用`this.state`。
@@ -70,7 +69,7 @@ These methods are called when an instance of a component is being created and in
 
     React.render(<App name="foo"/>, document.getElementById('example'));
 
-    # Output: Hello~ foo
+    // Output: Hello~ foo
     ```
 
     基本上，當父元素想傳值給子元素時，會設定在標籤的Attribute上。子元素就能夠透過`this.props.Attribute`以取得父元素傳進來的值。在這Example中，我們透過`name="foo"`傳給子元素
